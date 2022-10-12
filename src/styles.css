@@ -1,0 +1,131 @@
+.container{
+    border: 1px solid #bebbbb;
+    margin:7% 10% 0% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.view{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data{
+    border:1px solid #bebbbb;
+    border-radius: 5px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+}
+.data-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+ 
+}
+.data-1 *{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}  
+.feels-like{
+    border-right:1px solid #bebbbb;
+    border-bottom:1px solid #bebbbb;
+    
+}
+
+.humidity{
+    border-bottom:1px solid #bebbbb;
+}
+
+.wind-speed{
+    border-right:1px solid #bebbbb;
+}
+.data-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.data-2 *{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-family: sans-serif;
+    margin: 5px;
+    margin-top: 10px;
+    font-size: 9px;
+}
+p.grado{
+    font-size: 40px;
+    color:red;
+    margin:0;
+}
+
+div.data{
+    font-family: sans-serif;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    
+}
+.option p:first-child{
+    margin: 5px;
+    
+}
+.option p:last-child{
+    font-size: 13px;
+    font-weight: bolder;
+}
+span{
+    width: 30%;
+    color: red;
+    
+}
+.grado span{
+    font-size: 30px;
+}
+.temp{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+   
+}
+.temp select{
+    border:0;
+    
+}
+@media screen and (min-width:700px){
+    .container{
+        margin:5% 30% 0% 30%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .container{
+        
+        margin:5% 35% 0% 35%
+    }
+    
+}
+
