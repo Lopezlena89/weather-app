@@ -9,12 +9,17 @@ function App() {
   const [lng, setLng] = useState(0);
   const [unit, setUnit] = useState('metric')
 
-   navigator.geolocation.getCurrentPosition((position) => {
+ useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
       
-      setLat(position.coords.latitude);
-      setLng(position.coords.longitude);
-      
-  })
+        setLat(position.coords.latitude);
+        setLng(position.coords.longitude);
+        console.log(position.coords.latitude);
+        console.log(position.coords.longitude);
+        
+    })
+ }, [])
+ 
 
   const cambio = (text)=>{
       setUnit(text);
